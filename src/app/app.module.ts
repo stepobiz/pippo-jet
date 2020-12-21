@@ -7,18 +7,28 @@ import { pjSearchFlightComponent } from './components/search-flight/search-fligh
 import { PjToolbarComponent } from './components/toolbar/toolbar.component';
 import { PjAboutComponent } from './components/about/about.component';
 import { PjHeaderComponent } from './components/header/header.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { PjHomePageComponent } from './components/home-page/home-page.component';
+import { PjFlightPageComponent } from './components/flight-page/flight-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+
+    PjHomePageComponent,
+    PjFlightPageComponent,
+
     pjSearchFlightComponent,
     PjToolbarComponent,
     PjAboutComponent,
     PjHeaderComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

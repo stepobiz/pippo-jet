@@ -1,15 +1,10 @@
 <pj-toolbar></pj-toolbar>
 
 <div class="content" role="main">
-
-  banana
-
-  <search-flight></search-flight>
-
-  <pj-header></pj-header>
-  
-  <pj-about></pj-about>
-  
+  <nav>
+    <a routerLink="/home">Home</a>
+    -
+    <a routerLink="/flight">Flight</a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>
