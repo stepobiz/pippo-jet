@@ -1,0 +1,58 @@
+#about {
+    background-color: aquamarine;
+    width: 800px;
+    border: 3px solid black;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+#wrapper {
+    width: 505px;
+    margin: 10px 5px 10px 10px;
+}
+
+#menu {
+    height: 664px;
+    width: 253px;
+    margin: 10px 10px 10px 5px;
+    text-align: center;
+}
+
+.content {
+    border: 3px solid black;
+    float: left;
+    overflow: auto;
+}
+
+.menu-voices {
+    margin: 66.5px 0px;
+    line-height: 53px;
+}
+
+.menu-voices a:link {
+    color: black;
+}
+
+#text {
+    font-size: 20px;
+    text-align: justify;
+    overflow: auto;
+}
+
+#slogan {
+    height: 124px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 62px;
+    background-image: url(https://i1.wp.com/images.liveuniversity.it/sites/2/2019/10/onde.jpg?fit=990%2C619&ssl=1);
+    background-size: cover;
+    color: white;
+    overflow: auto;
+}
+
+.subcontent {
+    width: 469px;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 5px;
+}

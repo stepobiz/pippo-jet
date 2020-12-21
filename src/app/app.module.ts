@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { pjSearchFlightComponent } from './components/search-flight/search-flight.component';
 import { PjToolbarComponent } from './components/toolbar/toolbar.component';
+import { PjAboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     pjSearchFlightComponent,
     PjToolbarComponent,
+    PjAboutComponent,
   ],
   imports: [
     BrowserModule,
