@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { pjSearchFlightComponent } from './components/search-flight/search-flight.component';
 import { PjToolbarComponent } from './components/toolbar/toolbar.component';
 import { PjAboutComponent } from './components/about/about.component';
+import { PjHeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PjAboutComponent } from './components/about/about.component';
     pjSearchFlightComponent,
     PjToolbarComponent,
     PjAboutComponent,
+    PjHeaderComponent,
   ],
   imports: [
     BrowserModule,

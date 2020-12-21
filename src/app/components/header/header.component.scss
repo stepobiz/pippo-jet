@@ -1,0 +1,50 @@
+
+#header{ 
+    border: solid 1px black;
+    width: 800px;
+    height: 200px;
+    margin: 10px auto 0;
+}
+#logo{
+    height: 198px;
+    border: solid 1px black;
+    float: left;
+}
+#header #logo img{
+    height: auto;
+}
+form label{
+    text-decoration: underline;
+}
+#login{
+    width: 398px;
+    height: 98px;
+    border:solid 1px black;
+    float: right;
+    background-color: rgb(182, 167, 156);
+}
+#lingua{
+    width: 398px;
+    height: 98px;
+    padding: 0;
+    border: solid 1px black;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header .form-input{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 0;
+}
+#header #entra{
+    text-align: right;
+}
+#user{
+    margin: 0 0 0 80px;
+}
+#pass{
+    margin: 0 0 0 84px;
+}
