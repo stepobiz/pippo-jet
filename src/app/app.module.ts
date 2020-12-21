@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { pjSearchFlightComponent } from './components/search-flight/search-flight.component';
+import { PjToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    pjSearchFlightComponent,
+    PjToolbarComponent,
   ],
   imports: [
     BrowserModule,
