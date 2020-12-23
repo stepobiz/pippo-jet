@@ -1,10 +1,17 @@
-#flight-search-box {
-    height: 150px;
-    border: solid black 3px;
-    padding: 15px;
-    font-size: 20px;
+#wrapper {
+    overflow: auto;
 }
 
-#departure {
-    margin-right: 100px;
+#partenza {
+    float: left;
+    margin-right: 150px; 
+}
+
+#arrivo {
+    float: left;
+}
+
+#cerca-voli {
+    margin-left: 150px;
+    margin-top: 35px;
 }
