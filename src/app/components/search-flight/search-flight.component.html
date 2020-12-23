@@ -1,13 +1,43 @@
-<div id="flight-search-box">
+<mat-card id="wrapper">
 
-<label>Partenza da </label>
-<select id="departure"></select>
+    <div id="partenza">
+        <h4>Partenza da:</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Aereoporto di partenza</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let aereoporto of aereoporti" [value]="aereoporto.value">
+                    {{aereoporto.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
 
-<label>Arrivo a </label>
-<select id="arrival"></select>
+    <div>
+        <mat-label>Scegli una data</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </div>
 
-<br><br>
+    <div id="arrivo">
+        <h4>Arrivo a:</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Aereoporto di arrivo</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let aereoporto of aereoporti" [value]="aereoporto.value">
+                    {{aereoporto.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
 
-<button>Cerca voli</button>
+    <div>
+        <mat-label>Scegli una data</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </div>
 
-</div>
+    <button id="cerca-voli" mat-raised-button color="warn">Cerca voli</button>
+
+</mat-card>

@@ -10,9 +10,13 @@ import { PjHeaderComponent } from './components/header/header.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button'; 
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { PjHomePageComponent } from './components/home-page/home-page.component';
 import { PjFlightPageComponent } from './components/flight-page/flight-page.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
     NoopAnimationsModule,
 
     MatButtonModule,
+    MatCardModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
 
     
   ],
