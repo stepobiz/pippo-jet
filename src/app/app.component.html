@@ -1,12 +1,14 @@
+
 <pj-toolbar></pj-toolbar>
+<div id="toolbar-spacer"></div>
+
+<router-outlet></router-outlet>
 
 <div class="content" role="main">
   <nav>
     <a mat-stroked-button routerLink="/home">Home</a>
-    -
     <a mat-stroked-button routerLink="/flight">Flight</a>
   </nav>
-
-
-  <router-outlet></router-outlet>
 </div>
+
+<pg-footer></pg-footer>

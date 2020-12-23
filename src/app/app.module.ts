@@ -4,18 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatButtonModule } from '@angular/material/button'; 
-<<<<<<< HEAD
-import { PjHomePageComponent } from './components/home-page/home-page.component';
-import { PjFlightPageComponent } from './components/flight-page/flight-page.component';
-import { MatDividerModule } from '@angular/material/divider';
-import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
-import {MatListModule} from '@angular/material/list'; 
-=======
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 
@@ -28,7 +23,8 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
 import { MatNativeDateModule } from '@angular/material/core';
 import { PjSliderComponent } from './components/slider/slider.component';
 import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
->>>>>>> 97c41a8a679146c2a18de026bfbb4c3b33e55952
+import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
+
 
 @NgModule({
   declarations: [
@@ -41,12 +37,9 @@ import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
     PjToolbarComponent,
     PjAboutComponent,
     PjHeaderComponent,
-<<<<<<< HEAD
     PgFooterComponent,
-=======
     PjSliderComponent,
     PjTopMenuComponent,
->>>>>>> 97c41a8a679146c2a18de026bfbb4c3b33e55952
 
 
   ],
@@ -54,11 +47,9 @@ import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatDividerModule,
+    
     MatButtonModule,
-<<<<<<< HEAD
     MatListModule, 
-=======
     MatCardModule,
     MatSelectModule,
     MatDatepickerModule,
@@ -68,7 +59,6 @@ import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 
     NgImageSliderModule,
 
->>>>>>> 97c41a8a679146c2a18de026bfbb4c3b33e55952
     
   ],
   providers: [],
