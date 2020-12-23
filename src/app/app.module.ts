@@ -10,9 +10,11 @@ import { PjHeaderComponent } from './components/header/header.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button'; 
+import {MatMenuModule} from '@angular/material/menu';
 
 import { PjHomePageComponent } from './components/home-page/home-page.component';
 import { PjFlightPageComponent } from './components/flight-page/flight-page.component';
+import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
     PjToolbarComponent,
     PjAboutComponent,
     PjHeaderComponent,
+    PjTopMenuComponent,
 
 
   ],
@@ -34,6 +37,7 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
     NoopAnimationsModule,
 
     MatButtonModule,
+    MatMenuModule,
 
     
   ],
