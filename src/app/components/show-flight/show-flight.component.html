@@ -3,10 +3,19 @@
   <mat-card>VOLI DA/PER IN BASE ALLA RICERCA</mat-card> <br>
     
   <mat-card class="card-flight" *ngFor="let flight of flights">
-    NUMERO VOLO: {{flight.numerovolo}} <br>
-    RITARDO VOLO: {{flight.ritardo}} <br>
-    DESTINAZIONE VOLO: {{flight.destinazione}} <br>
-    PARTENZA VOLO: {{flight.partenza}} <br>
+    <div class="left-card">
+      <mat-card class="left-card.up">
+        <span class="text-value">DESTINAZIONE VOLO:</span> <span class="text">{{flight.destinazione}}</span> <br>
+        <span class="text-value">PARTENZA VOLO:</span> <span class="text">{{flight.partenza}}</span> <br>
+      </mat-card>
+      <mat-card class="left-card-down">
+        <span class="text-value">NUMERO VOLO:</span> <span class="text">{{flight.numerovolo}}</span> <br>
+        <span class="text-value"> RITARDO VOLO:</span> <span class="text">{{flight.ritardo}}</span> <br>
+      </mat-card>
+    </div>
+    <mat-card class="right-card">
+      {{flight.prezzo}}
+    </mat-card>
   </mat-card>  
     
 </div>
