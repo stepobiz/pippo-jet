@@ -13,7 +13,10 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { PjHomePageComponent } from './components/home-page/home-page.component';
 import { PjFlightPageComponent } from './components/flight-page/flight-page.component';
-
+import { PjShowFlightComponent } from './components/show-flight/show-flight.component';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,7 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
     PjToolbarComponent,
     PjAboutComponent,
     PjHeaderComponent,
+    PjShowFlightComponent,
 
 
   ],
@@ -32,8 +36,9 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-
-    MatButtonModule,
+    MatSliderModule,
+    MatCardModule,
+    MatExpansionModule,
 
     
   ],
@@ -41,3 +46,5 @@ import { PjFlightPageComponent } from './components/flight-page/flight-page.comp
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
