@@ -1,6 +1,6 @@
 <mat-card id="wrapper">
 
-    <div id="partenza">
+    <div id="departure">
         <h4>Partenza da:</h4>
         <mat-form-field appearance="fill">
             <mat-label>Aereoporto di partenza</mat-label>
@@ -12,14 +12,17 @@
         </mat-form-field>
     </div>
 
-    <div>
-        <mat-label>Scegli una data</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+    <div id="picker1">
+        <h4>Data partenza:</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Scegli una data </mat-label>
+            <input matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
     </div>
 
-    <div id="arrivo">
+    <div id="arrival">
         <h4>Arrivo a:</h4>
         <mat-form-field appearance="fill">
             <mat-label>Aereoporto di arrivo</mat-label>
@@ -31,12 +34,17 @@
         </mat-form-field>
     </div>
 
-    <div>
-        <mat-label>Scegli una data</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+    <div id="picker2">
+        <h4>Data arrivo:</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Scegli una data </mat-label>
+            <input matInput [matDatepicker]="picker2">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
     </div>
+
+    <br>
 
     <button id="cerca-voli" mat-raised-button color="warn">Cerca voli</button>
 

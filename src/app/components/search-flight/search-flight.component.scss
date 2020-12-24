@@ -1,17 +1,29 @@
 #wrapper {
     overflow: auto;
+    width: max-content;
+    padding: 10px;
 }
 
-#partenza {
+#departure {
     float: left;
-    margin-right: 150px; 
+    margin-right: 20px;
 }
 
-#arrivo {
+#picker1 {
+    float: left;
+    margin-right: 20px;
+}
+
+#arrival {
+    float: left;
+    margin-right: 20px;
+}
+
+#picker2 {
     float: left;
 }
 
 #cerca-voli {
-    margin-left: 150px;
-    margin-top: 35px;
+    display: block;
+    margin: auto;
 }
