@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 
@@ -29,6 +30,7 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { PjSliderComponent } from './components/slider/slider.component';
 import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
+import { PjLoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -46,6 +48,7 @@ import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
     PgFooterComponent,
     PjSliderComponent,
     PjTopMenuComponent,
+    PjLoginComponent,
 
 
   ],
@@ -65,6 +68,7 @@ import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
     MatInputModule,
     MatNativeDateModule,
     MatMenuModule,
+    MatIconModule,
 
     NgImageSliderModule,
 
