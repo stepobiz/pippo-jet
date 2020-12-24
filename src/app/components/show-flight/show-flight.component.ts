@@ -14,10 +14,10 @@ export class PjShowFlightComponent implements OnInit {
         {numerovolo: 'CC54685', partenza: 'Napoli', destinazione: 'Roma'},
         {numerovolo: 'CD54865', partenza: 'Roma', destinazione: 'Roma'},
         {numerovolo: 'CD54865', partenza: 'Roma', destinazione: 'Roma'},
-        {numerovolo: 'DS45856', partenza: 'Milano', destinazione: 'Roma'}
-        {numerovolo: 'RF56895', partenza: 'Roma', destinazione: 'Roma'}
-        {numerovolo: 'CB58964', partenza: 'Torino', destinazione: 'Roma'}
-        {numerovolo: 'GH55689', partenza: 'Genova', destinazione: 'Roma'}
+        {numerovolo: 'DS45856', partenza: 'Milano', destinazione: 'Roma'},
+        {numerovolo: 'RF56895', partenza: 'Roma', destinazione: 'Casoria'},
+        {numerovolo: 'CB58964', partenza: 'Torino', destinazione: 'Milano'},
+        {numerovolo: 'GH55689', partenza: 'Genova', destinazione: 'Roma'},
         {numerovolo: 'JU54866', partenza: 'Capri', destinazione: 'Roma'}
       ];
 }

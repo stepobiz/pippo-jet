@@ -1,3 +1,29 @@
-#search-flight {
-    background-color: aquamarine;
+#wrapper {
+    overflow: auto;
+    width: max-content;
+    padding: 10px;
+}
+
+#departure {
+    float: left;
+    margin-right: 20px;
+}
+
+#picker1 {
+    float: left;
+    margin-right: 20px;
+}
+
+#arrival {
+    float: left;
+    margin-right: 20px;
+}
+
+#picker2 {
+    float: left;
+}
+
+#cerca-voli {
+    display: block;
+    margin: auto;
 }
