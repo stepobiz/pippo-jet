@@ -1,38 +1,12 @@
 
-<mat-card id="wrapper_show-flight">
-    <mat-card>Voli da/per in base alla ricerca</mat-card>
-    <mat-card>
-        Nome volo <br>
-        Numero volo <br>
-        Ritardo volo <br>
-        Destinazione volo <br>
-        Partenza volo <br>
-    </mat-card>
-    <br>
-    <mat-card>
-        Nome volo <br>
-        Numero volo <br>
-        Ritardo volo <br>
-        Destinazione volo <br>
-        Partenza volo <br>
-    </mat-card>
-</mat-card>
-
-
-<mat-accordion>
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-            
-        </mat-panel-title>
-        <mat-panel-description>
-          Napoli - Roma a partire da 10€
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      Nome volo <br>
-      Numero volo <br>
-      Ritardo volo <br>
-      Destinazione volo <br>
-      Partenza volo <br>
-    </mat-expansion-panel>
-  </mat-accordion>
+<div id="wrapper_show-flight">
+  <mat-card>VOLI DA/PER IN BASE ALLA RICERCA</mat-card> <br>
+    
+  <mat-card class="card-flight" *ngFor="let flight of flights">
+    NUMERO VOLO: {{flight.numerovolo}} <br>
+    RITARDO VOLO: {{flight.ritardo}} <br>
+    DESTINAZIONE VOLO: {{flight.destinazione}} <br>
+    PARTENZA VOLO: {{flight.partenza}} <br>
+  </mat-card>  
+    
+</div>
