@@ -1,7 +1,7 @@
 <mat-card id="wrapper">
 
     <div id="departure">
-        <h4>Partenza da:</h4>
+        <h4><mat-icon>flight_takeoff</mat-icon> Partenza da:</h4>
         <mat-form-field appearance="fill">
             <mat-label>Aereoporto di partenza</mat-label>
             <mat-select>
@@ -12,18 +12,8 @@
         </mat-form-field>
     </div>
 
-    <div id="picker1">
-        <h4>Data partenza:</h4>
-        <mat-form-field appearance="fill">
-            <mat-label>Scegli una data </mat-label>
-            <input matInput [matDatepicker]="picker1">
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
-        </mat-form-field>
-    </div>
-
     <div id="arrival">
-        <h4>Arrivo a:</h4>
+        <h4><mat-icon>flight_land</mat-icon> Arrivo a:</h4>
         <mat-form-field appearance="fill">
             <mat-label>Aereoporto di arrivo</mat-label>
             <mat-select>
@@ -34,8 +24,18 @@
         </mat-form-field>
     </div>
 
-    <div id="picker2">
-        <h4>Data arrivo:</h4>
+    <div id="picker1">
+        <h4><mat-icon>calendar_today</mat-icon> Data partenza:</h4>
+        <mat-form-field appearance="fill">
+            <mat-label>Scegli una data </mat-label>
+            <input matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+
+    <div id="picker2" *ngIf="check.checked">
+        <h4><mat-icon>calendar_today</mat-icon> Data ritorno:</h4>
         <mat-form-field appearance="fill">
             <mat-label>Scegli una data </mat-label>
             <input matInput [matDatepicker]="picker2">
@@ -44,8 +44,11 @@
         </mat-form-field>
     </div>
 
-    <br>
+    <div id="search-flight-button">
+        <button mat-raised-button color="warn">Cerca voli</button>
+    </div>
+<br>
 
-    <button id="cerca-voli" mat-raised-button color="warn">Cerca voli</button>
+    <mat-checkbox name="check" #check [(ngModel)]="value" color="warn">Andata e ritorno</mat-checkbox>
 
 </mat-card>
