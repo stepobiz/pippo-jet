@@ -1,43 +1,50 @@
 #wrapper {
-    width: 300px;
-    height: 550px;
+    width: 320px;
+    height: 650px;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 #logoimg {
     height: 200px; 
-    margin: 20px 0 0 50px;    
+    margin: 20px 0 0 60px;    
+}
+
+#h1 {
+    color: rgba(16, 16, 104, 0.87);
+    margin: 15px auto;
+   text-align: center;
+   font-weight: bold;
+}
+
+#nation {
+    margin: 10px 0 0 30px;
+    width: 250px;
 }
 
 #text {
-    margin: 5px 0 0 25px;
+    margin: 0 0 0 30px;
     width: 250px;
 }
+
 
 .mat-icon {
     float: right;
     color: rgba(16, 16, 104, 0.87);
 }
 
-#h1 {
-    color: rgba(16, 16, 104, 0.87);
-    margin: 10px auto;
-   text-align: center;
-   font-weight: bold;
-}
 
 #forgot {
     float:right;
-    margin: 10px 20px 0 0;
+    margin: 20px 20px 0 0;
 }
 
 #remember {
-    margin: 10px 0 0 20px;
+    margin: 20px 0 0 20px;
 }
 
 #login {
-   margin: 30px 0 10px 100px;
+   margin: 30px 0 10px 110px;
    width: 100px;
    text-align: center;
 }
