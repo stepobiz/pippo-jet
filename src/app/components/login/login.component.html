@@ -10,7 +10,7 @@
             <mat-form-field id="text">
                 <mat-label>Email</mat-label>
                 <mat-icon>account_circle</mat-icon><br />
-                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                <input type="email" matInput="emailFormControl" placeholder="Ex. pat@example.com">
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Please enter a valid email address
                 </mat-error>
@@ -25,8 +25,7 @@
         <mat-form-field id="text" appearance="fill">
             <mat-label>Enter your password</mat-label>
             <input matInput [type]="hide ? 'password' : 'text'">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                [attr.aria-pressed]="hide">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field> <br />

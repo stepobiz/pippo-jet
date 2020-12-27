@@ -1,41 +1,32 @@
 <div>
+
     <button mat-button [matMenuTriggerFor]="aboveMenu">VOLI</button>
     <mat-menu #aboveMenu="matMenu" yPosition="above">
-        <button mat-menu-item>Offerta di volo</button>
-        <button mat-menu-item>Stato del tuo volo</button>
-        <button mat-menu-item>Gruppi</button>
-        <button mat-menu-item>Agenzie di viaggi</button>
+        <mat-option routerLink="/home" *ngFor="let menu of flightMenu" [value]="menu.value">
+            {{menu.viewValue}}
+        </mat-option>
     </mat-menu>
+
 
     <button mat-button [matMenuTriggerFor]="belowMenu">PRENOTAZIONE</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
-        <button mat-menu-item>Check-in online</button>
-        <button mat-menu-item>Scegli il tuo posto</button>
-        <button mat-menu-item>Imbarco prioritario</button>
-        <button mat-menu-item>Aggiungi un bagaglio</button>
-        <button mat-menu-item>Gestisci la tua prenotazione</button>
-        <button mat-menu-item>Prima del viaggio</button>
-        <button mat-menu-item>Condizioni di trasporto del bagaglio</button>
+        <mat-option routerLink="/flight" *ngFor="let menu of prenotation" [value]="menu.value">
+            {{menu.viewValue}}
+        </mat-option>
     </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="beforeMenu">SCOPRI</button>
     <mat-menu #beforeMenu="matMenu" xPosition="before">
-        <button mat-menu-item>Mappa di destinazione e rotte</button>
-        <button mat-menu-item>Combo</button>
-        <button mat-menu-item>Flex</button>
-        <button mat-menu-item>Intrattenimento a bordo</button>
-        <button mat-menu-item>Megapippojet</button>
-        <button mat-menu-item>Pippojet Travel Blog</button>
-        <button mat-menu-item>Volare con Pippojet</button>
+        <mat-option routerLink="/home" *ngFor="let menu of discover" [value]="menu.value">
+            {{menu.viewValue}}
+        </mat-option>
     </mat-menu>
 
 
     <button mat-button [matMenuTriggerFor]="afterMenu">PIPPOJET</button>
     <mat-menu #afterMenu="matMenu" xPosition="after">
-        <button mat-menu-item>Informazioni su Pippojet</button>
-        <button mat-menu-item>Sala stampa</button>
-        <button mat-menu-item>Centro assistenza</button>
-        <button mat-menu-item>Lavora con noi</button>
-        <button mat-menu-item>La tua opinione è importante</button>
+        <mat-option routerLink="/flight" *ngFor="let menu of pippojet" [value]="menu.value">
+            {{menu.viewValue}}
+        </mat-option>
     </mat-menu>
 </div>
