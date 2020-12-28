@@ -1,17 +1,20 @@
 #wrapper {
     overflow: auto;
+    height: max-content;
     width: max-content;
     padding: 10px;
+    margin: auto;
+    color: rgba(16, 16, 104, 0.87);
+    background-image: url(https://www.mediterraneanhope.com/wp-content/uploads/2020/05/photo-1544264747-d8af8eb09999-1024x676.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bold;
 }
 
 #departure {
     float: left;
     margin-right: 20px;
-}
-
-#picker1 {
-    float: left;
-    margin-right: 20px;
+    font-weight: bold;
 }
 
 #arrival {
@@ -19,11 +22,21 @@
     margin-right: 20px;
 }
 
-#picker2 {
+#picker1 {
+    margin-right: 20px;
     float: left;
 }
 
-#cerca-voli {
-    display: block;
-    margin: auto;
+#picker2 {
+    float: left;
+    margin-right: 20px;    
+}
+
+#search-flight-button {
+    float: left;
+    line-height: 150px;
+}
+
+h4 {
+    font-weight: bold;
 }

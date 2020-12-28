@@ -10,10 +10,19 @@ export class pjSearchFlightComponent implements OnInit {
 
     ngOnInit(): void { }
 
+    value = false;
+
     aereoporti = [
-        {value: 'napoli-0', viewValue: 'Napoli'},
-        {value: 'roma-1', viewValue: 'Roma'},
-        {value: 'torino-2', viewValue: 'Torino'}
+        {value: 'bergamo-0', viewValue: 'Bergamo - Orio al Serio'},
+        {value: 'bologna-1', viewValue: 'Bologna - Guglielmo Marconi'},
+        {value: 'catania-2', viewValue: 'Catania - Fontana Rossa'},
+        {value: 'milano-3', viewValue: 'Milano - Linate'},
+        {value: 'milano-4', viewValue: 'Milano - Malpensa'},
+        {value: 'napoli-5', viewValue: 'Napoli - Capodichino'},
+        {value: 'palermo-6', viewValue: 'Palermo - Falcone e Borsellino'},
+        {value: 'pisa-7', viewValue: 'Pisa - Galileo Galilei'},
+        {value: 'roma-8', viewValue: 'Roma - Fiumicino'},
+        {value: 'venezia-9', viewValue: 'Venezia - Marco Polo'},
       ];
 
 }
