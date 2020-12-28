@@ -1,12 +1,49 @@
-#footer { 
-    background-color: #683242; 
-    border: solid 3px black; 
-    overflow: auto;
-}
 
-#footer .boardcolor {
-    border: solid 2px rgb(185, 8, 91);
+#footer { 
+    background-color: white;
+    overflow: auto;
+    border: black solid 5px; 
     
 }
+
+
+#footer #logo {
+    float: left;
+    margin: 1px 1px 1px 1px; 
+    overflow: auto;
+    
+}
+
+#footer #logo img { 
+    width: 245px;
+    height: 235px;
+    
+}
+
+#footer #linktest .menu {
+    background-color:white;
+    font-family:'Lucida Sans';
+    float: inline-end;
+    overflow: auto;
+    margin: 5px 10px 7px 10px;
+    
+}
+
+#footer #linktest .menu1 {
+
+    background-color:white;
+    font-family: 'Lucida Sans';
+    height:225px;
+    float: right;
+    margin: 5px 40px 7px 10px;
+       
+}
+
+
+
+
+
+
+
 
 
