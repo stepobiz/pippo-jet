@@ -10,7 +10,7 @@ export class pjSearchFlightComponent implements OnInit {
 
     ngOnInit(): void { }
 
-    value = false;
+    checkvalue = false;
 
     aereoporti = [
         {value: 'bergamo-0', viewValue: 'Bergamo - Orio al Serio'},
