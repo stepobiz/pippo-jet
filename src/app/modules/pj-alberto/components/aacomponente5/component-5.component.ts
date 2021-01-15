@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-    selector: 'aacomponente5',
-    templateUrl: './aacomponente5.component.html',
-    styleUrls: ['./aacomponente5.component.scss']
+    selector: 'component-5',
+    templateUrl: './component-5.component.html',
+    styleUrls: ['./component-5.component.scss']
 })
-export class AAComponente5Component implements OnInit {
+export class PjAaComponent5Component implements OnInit {
     constructor(
         private _formBuilder: FormBuilder
     ) {
