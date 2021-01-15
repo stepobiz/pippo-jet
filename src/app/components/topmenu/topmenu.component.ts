@@ -28,14 +28,12 @@ export class PjTopMenuComponent implements OnInit {
     ];
 
     discover = [
-        { value: 'destination', viewValue: 'Mappa di destinazione e rotte' },
-        { value: 'combo', viewValue: 'Combo' },
-        { value: 'flex', viewValue: 'Flex' },
-        { value: 'intrattenimento', viewValue: 'Intrattenimento a bordo' },
-        { value: 'megapippojet', viewValue: 'Megapippojet' },
-        { value: 'blog', viewValue: 'Pippojet travel Blog' },
-        { value: 'vola-con-noi', viewValue: 'Volare con Pippojet' },
-
+        { value: 'rossella', viewValue: 'Rossella Module' },
+        { value: 'naomi', viewValue: 'Naomi Module' },
+        { value: 'alberto', viewValue: 'Alberto Module' },
+        { value: 'giacomo', viewValue: 'Giacomo Module' },
+        { value: 'marika', viewValue: 'Marika Module' },
+        { value: 'marco', viewValue: 'Marco Module' },
     ];
 
     pippojet = [

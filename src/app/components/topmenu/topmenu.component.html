@@ -17,7 +17,7 @@
 
     <button mat-button [matMenuTriggerFor]="beforeMenu">SCOPRI</button>
     <mat-menu #beforeMenu="matMenu" xPosition="before">
-        <mat-option routerLink="/home" *ngFor="let menu of discover" [value]="menu.value">
+        <mat-option *ngFor="let menu of discover" [routerLink]="menu.value">
             {{menu.viewValue}}
         </mat-option>
     </mat-menu>
