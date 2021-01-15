@@ -36,6 +36,7 @@ import { PjLoginComponent } from './components/login/login.component';
 import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
 import { gtModule } from './modules/gt-module.module';
 import { pjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
+import { pjNaomiModule } from './modules/pj-naomi/pj-naomi-module';
 
 
 @NgModule({
@@ -82,6 +83,8 @@ import { pjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
     NgImageSliderModule,
     gtModule,
     pjRossellaModule,
+
+    pjNaomiModule,
     
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'it-IT' }],
