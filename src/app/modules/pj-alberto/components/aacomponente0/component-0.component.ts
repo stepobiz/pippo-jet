@@ -2,11 +2,11 @@ import { NgSwitch } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'aacomponente0',
-    templateUrl: './aacomponente0.component.html',
-    styleUrls: ['./aacomponente0.component.scss']
+    selector: 'component-0',
+    templateUrl: './component-0.component.html',
+    styleUrls: ['./component-0.component.scss']
 })
-export class AAComponente0Component implements OnInit {
+export class PjAaComponent0Component implements OnInit {
     constructor() { }
 
     ngOnInit(): void { }

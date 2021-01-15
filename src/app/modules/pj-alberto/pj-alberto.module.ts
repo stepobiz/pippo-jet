@@ -2,13 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AAComponente0Component } from './components/aacomponente0/aacomponente0.component';
-import { AAComponente1Component } from './components/aacomponente1/aacomponente1.component';
-import { AAComponente2Component } from './components/aacomponente2/aacomponente2.component';
-import { AAComponente3Component } from './components/aacomponente3/aacomponente3.component';
-import { AAComponente4Component } from './components/aacomponente4/aacomponente4.component';
-import { AAComponente5Component } from './components/aacomponente5/aacomponente5.component';
-
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -18,14 +11,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 
+import { PjAaComponent0Component } from './components/aacomponente0/component-0.component';
+import { PjAaComponent1Component } from './components/aacomponente1/component-1.component';
+import { PjAaComponent2Component } from './components/aacomponente2/component-2.component';
+import { PjAaComponent3Component } from './components/aacomponente3/component-3.component';
+import { PjAaComponent4Component } from './components/aacomponente4/component-4.component';
+import { PjAaComponent5Component } from './components/aacomponente5/component-5.component';
+
+
 @NgModule({
     declarations: [
-        AAComponente0Component,
-        AAComponente1Component,
-        AAComponente2Component,
-        AAComponente3Component,
-        AAComponente4Component,
-        AAComponente5Component
+        PjAaComponent0Component,
+        PjAaComponent1Component,
+        PjAaComponent2Component,
+        PjAaComponent3Component,
+        PjAaComponent4Component,
+        PjAaComponent5Component,
+        
     ],
     imports: [
         CommonModule,
@@ -39,11 +41,11 @@ import { MatCardModule } from '@angular/material/card';
         MatInputModule,
         MatIconModule,
         MatCheckboxModule,
-        MatCardModule
+        MatCardModule,
 
     ],
     exports: [
-        AAComponente0Component
+        PjAaComponent0Component,
     ],
     providers: [],
 })
