@@ -1,5 +1,5 @@
 import { NgSwitch } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
     selector: 'component-0',
@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./component-0.component.scss']
 })
 export class PjAaComponent0Component implements OnInit {
+    testoDaMostrare1 :string = "i maiali sono rosa";
+    testoDaMostrare2 :string = "il sole è giallo";
+    testoDaMostrare3 :string = "il cielo è azzurro";
+    testoDaMostrare4 :string = "i sassi sono grigi";
+    testoDaMostrare5 :string = "l'erba è verde";
+
     constructor() { }
 
     ngOnInit(): void { }

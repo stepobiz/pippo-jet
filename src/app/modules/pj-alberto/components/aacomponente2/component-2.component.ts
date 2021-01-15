@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
     selector: 'component-2',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./component-2.component.scss']
 })
 export class PjAaComponent2Component implements OnInit {
+    @Input()
+    titolo: string | undefined;
+
     constructor() { }
 
     ngOnInit(): void { }

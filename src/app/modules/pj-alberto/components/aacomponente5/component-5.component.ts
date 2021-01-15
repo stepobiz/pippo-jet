@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
     styleUrls: ['./component-5.component.scss']
 })
 export class PjAaComponent5Component implements OnInit {
+    @Input()
+    titolo: string | undefined;
+
     constructor(
         private _formBuilder: FormBuilder
     ) {
