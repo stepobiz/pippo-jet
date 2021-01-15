@@ -1,0 +1,17 @@
+<div class="rsbuttons">
+    <button (click)="fShow(1)" class="bottonibelli" mat-stroked-button color="primary" > Componente1</button>
+    <button (click)="fShow(2)"class="bottonibelli"  mat-raised-button color="accent">Componente2</button>
+    <button (click)="fShow(3)" class="bottonibelli" mat-raised-button color="warn">Componente3</button>
+    <button (click)="fShow(4)"class="bottonibelli" mat-raised-button>Login</button>
+    <button (click)="fShow(5)" class="bottonibelli"  mat-stroked-button color="primary">Registrazione</button>
+</div>
+<rscomponent1 *ngIf="show1==true"></rscomponent1>
+<rscomponent2 *ngIf="show2==true" ></rscomponent2>
+<rscomponent3 *ngIf="show3==true"></rscomponent3>
+<rscomponent4 *ngIf="show4==true" class="rscomponent4"></rscomponent4>
+<rscomponent5 *ngIf="show5==true" class="rscomponent5"></rscomponent5>
+    
+
+
+ 
+   
