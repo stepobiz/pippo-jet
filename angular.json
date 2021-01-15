@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "pippo-jet"
+  "defaultProject": "pippo-jet",
+  "cli": {
+    "analytics": false
+  }
 }

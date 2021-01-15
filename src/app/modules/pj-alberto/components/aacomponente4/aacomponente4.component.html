@@ -1,0 +1,40 @@
+<form [formGroup]="loginFormGroup">
+    <mat-card id="login-box">
+        
+        <mat-card-header>
+            <div mat-card-avatar>
+                <span class="material-icons">
+                    account_circle
+                </span>
+            </div>
+            <mat-card-title>LOGIN BOX</mat-card-title>
+            <mat-card-subtitle>Effettua il login</mat-card-subtitle>
+        </mat-card-header>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+
+            <mat-label>E-mail</mat-label>
+            <input name="email" formControlName="email" matInput placeholder="pat@example.com" required>
+            <mat-error>Inserire mail!</mat-error>
+
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+
+            <mat-label>Password</mat-label>
+            <input name="password" formControlName="password" matInput required>
+            <mat-error>Inserire password!</mat-error>
+
+        </mat-form-field>
+
+        <br><br>
+
+        <button mat-raised-button color="warn">Login</button>
+
+    </mat-card>
+
+</form>

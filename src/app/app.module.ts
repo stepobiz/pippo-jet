@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,7 @@ import { PjSliderComponent } from './components/slider/slider.component';
 import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
 import { PjLoginComponent } from './components/login/login.component';
+import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { PjLoginComponent } from './components/login/login.component';
     AppRoutingModule,
     NoopAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
 
     MatSliderModule,
     MatExpansionModule,
@@ -74,6 +76,7 @@ import { PjLoginComponent } from './components/login/login.component';
     MatIconModule,
     MatCheckboxModule,
 
+    PjAlbertoModule,
     NgImageSliderModule,
 
     

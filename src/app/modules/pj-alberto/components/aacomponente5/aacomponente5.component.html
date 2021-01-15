@@ -1,0 +1,109 @@
+<form [formGroup]="registrationFormGroup" id="registration-box">
+    <mat-card id="registration-box">
+
+        <mat-card-header>
+            <div mat-card-avatar>
+                <span class="material-icons">
+                    perm_contact_calendar
+                </span>
+            </div>
+            <mat-card-title>REGISTRATION BOX</mat-card-title>
+            <mat-card-subtitle>Registrati</mat-card-subtitle>
+        </mat-card-header>
+
+        <br>
+
+        <mat-form-field appearance="legacy" class="fields">
+
+            <input name="nome" formControlName="nome" matInput placeholder="Nome" required>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+
+            <input name="cognome" formControlName="cognome" matInput placeholder="Cognome" required>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="legacy" class="fields">
+
+            <mat-select name="giornoDiNascita" formControlName="giornoDiNascita" matInput
+                placeholder="Giorno di nascita" required>
+                <mat-option *ngFor="let giorno of giorni" [value]="giorno.value">
+                    {{giorno.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy" class="fields">
+
+            <mat-select name="meseDiNascita" formControlName="meseDiNascita" matInput placeholder="Mese di nascita"
+                required>
+                <mat-option *ngFor="let mese of mesi" [value]="mese.value">
+                    {{mese.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+
+            <mat-select name="annoDiNascita" formControlName="annoDiNascita" matInput placeholder="Anno di nascita"
+                required>
+                <mat-option *ngFor="let anno of anni" [value]="anno.value">
+                    {{anno.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="legacy" class="fields">
+
+            <input name="email" formControlName="email" matInput placeholder="E-mail" required>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+
+            <input name="ripetiEmail" formControlName="ripetiEmail" matInput placeholder="Ripeti E-mail" required>
+            <mat-error>Campo obbligatorio!</mat-error>
+
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="legacy" class="fields">
+
+            <input name="password" formControlName="password" matInput placeholder="Password" required>
+            <mat-error>Campo obbligatorio! </mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+
+            <input name="ripetiPassword" formControlName="ripetiPassword" matInput placeholder=" Ripeti Password"
+                required>
+            <mat-error>Campo obbligatorio! </mat-error>
+
+        </mat-form-field>
+
+        <br><br>
+
+        <button id="registrati-button" mat-raised-button color="warn">Registrati</button>
+
+    </mat-card>
+
+
+
+</form>
