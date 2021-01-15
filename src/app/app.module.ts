@@ -34,9 +34,9 @@ import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
 import { PjLoginComponent } from './components/login/login.component';
 import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
-import { pjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
 import { pjNaomiModule } from './modules/pj-naomi/pj-naomi-module';
 import { PjGiacomoModule } from './modules/gt-module/pj-giacomo.module';
+import { PjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
 
 
 @NgModule({
@@ -81,8 +81,8 @@ import { PjGiacomoModule } from './modules/gt-module/pj-giacomo.module';
 
     PjAlbertoModule,
     NgImageSliderModule,
-    pjRossellaModule,
     PjGiacomoModule,
+    PjRossellaModule,
 
     pjNaomiModule,
     
