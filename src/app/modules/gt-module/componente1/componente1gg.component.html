@@ -1,0 +1,35 @@
+<h1 id="title">REGISTRAZIONE</h1><br>
+<div id="wrapper">
+    <form [formGroup]="registrationFormGroup" (ngSubmit)="sumbit()">
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Nome</mat-label>
+            <input formControlName="name" matInput placeholder="Mario">
+            <mat-error>Inserire il nome!</mat-error>
+        </mat-form-field> <br>
+
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Cognome</mat-label>
+            <input formControlName="surname" matInput placeholder="Rossi">
+            <mat-error>Inserire il cognome!</mat-error>
+        </mat-form-field> <br>
+
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Email</mat-label>
+            <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+            <mat-error>Inserire l'email!</mat-error>
+        </mat-form-field> <br>
+
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Nazionalità</mat-label>
+            <mat-select formControlName="nation">
+                <mat-option *ngFor="let nation of nations" [value]="nation.value">
+                    {{nation.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Selezionare la nazione!</mat-error>
+        </mat-form-field> <br>
+
+        <button onclick="sumbit()">Registrati</button>
+
+    </form>
+</div>

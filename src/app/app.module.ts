@@ -33,6 +33,8 @@ import { PjSliderComponent } from './components/slider/slider.component';
 import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
 import { PjLoginComponent } from './components/login/login.component';
+import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
+import { gtModule } from './modules/gt-module.module';
 
 
 @NgModule({
@@ -75,7 +77,9 @@ import { PjLoginComponent } from './components/login/login.component';
     MatIconModule,
     MatCheckboxModule,
 
+    PjAlbertoModule,
     NgImageSliderModule,
+    gtModule,
 
     
   ],

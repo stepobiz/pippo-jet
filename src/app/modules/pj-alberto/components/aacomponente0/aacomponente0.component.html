@@ -1,0 +1,15 @@
+<mat-card id="wrapper">
+    <button class="component-button" mat-raised-button color="warn" (click)="showComponente(1)">Componente 1</button>
+    <button class="component-button" mat-raised-button color="warn" (click)="showComponente(2)">Componente 2</button>
+    <button class="component-button" mat-raised-button color="warn" (click)="showComponente(3)">Componente 3</button>
+    <button class="component-button" mat-raised-button color="warn" (click)="showComponente(4)">Componente 4</button>
+    <button class="component-button" mat-raised-button color="warn" (click)="showComponente(5)">Componente 5</button>
+</mat-card>
+
+<br>
+
+<aacomponente1 *ngIf="componente1"></aacomponente1>
+<aacomponente2 *ngIf="componente2"></aacomponente2>
+<aacomponente3 *ngIf="componente3"></aacomponente3>
+<aacomponente4 *ngIf="loginForm"></aacomponente4>
+<aacomponente5 *ngIf="registrationForm"></aacomponente5>
