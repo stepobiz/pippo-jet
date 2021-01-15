@@ -1,0 +1,31 @@
+<div class="Registration"> <h1> INSERISCI QUI I TUOI DATI</h1>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Name">
+          <mat-hint>*Obbligatorio</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Cognome</mat-label>
+          <input matInput placeholder="surname">
+          <mat-hint>*Obbligatorio</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Nazionalità</mat-label>
+          <input matInput placeholder="nation">
+          <mat-hint>*Obbligatorio</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+      </p>
+      <button mat-stroked-button color="primary">Registrati!</button>     
+</div>
