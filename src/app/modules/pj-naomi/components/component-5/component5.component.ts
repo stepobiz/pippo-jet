@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 
 @Component({
-    selector: 'nccomponente-5',
-    templateUrl: './ncregistrazione.component.html',
-    styleUrls: ['./ncregistrazione.component.scss',]
+    selector: 'component-5',
+    templateUrl: './component5.component.html',
+    styleUrls: ['./component5.component.scss',]
 })
-export class NcComponente5 implements OnInit {
+export class PjNcComponent5 implements OnInit {
     constructor(
         private _formBuilder: FormBuilder,
     ) {

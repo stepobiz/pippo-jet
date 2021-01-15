@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 
 @Component({
-    selector: 'nc-login',
-    templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss']
+    selector: 'component-4',
+    templateUrl: './component4.component.html',
+    styleUrls: ['./component4.component.scss']
 })
-export class NcLogin implements OnInit {
+export class PjNcComponent4 implements OnInit {
     [x: string]: any;
     ncloginFormGroup: FormGroup;
     constructor(

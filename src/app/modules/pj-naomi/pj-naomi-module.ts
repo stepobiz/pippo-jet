@@ -15,24 +15,30 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
-import { NcComponente1 } from './nc-components/nccomponente-1/ncomponente1.component';
-import { NcComponente2 } from './nc-components/nccomponente-2/nccomponente-2.component';
-import { NcComponente3 } from './nc-components/nccomponente-3/componente3.component';
-import { NcComponente5 } from './nc-components/nccomponents/ncomponente1/nccomponente-5/ncregistrazione.component';
-import { NcComponente6 } from './nc-components/nccomponente-6/nccomponente-6.component';
-import { NcLogin } from './nc-components/nccomponent-4/login.component';
 
 
-
+import { PjNcComponent7 } from './components/component-7/component7.component';
+import { PjNcComponent8 } from './components/component-8/component8.component';
+import { PjNcComponent1 } from './components/component-1/component1.component';
+import { PjNcComponent2 } from './components/component-2/component2.component';
+import { PjNcComponent3 } from './components/component-3/component3.component';
+import { PjNcComponent4 } from './components/component-4/component4.component';
+import { PjNcComponent5 } from './components/component-5/component5.component';
+import { PjNcComponent6 } from './components/component-6/component6.component';
 
 
 @NgModule({
-    declarations: [ NcComponente1,
-        NcComponente2,
-        NcComponente3,
-        NcComponente5,
-        NcComponente6,
-        NcLogin, 
+    declarations: [ 
+        
+        PjNcComponent1,
+        PjNcComponent2,
+        PjNcComponent3,
+        PjNcComponent4,
+        PjNcComponent5,
+        PjNcComponent6,
+        PjNcComponent7,
+        PjNcComponent8,
+    
     ],
     imports: [ CommonModule,
         
@@ -56,7 +62,7 @@ import { NcLogin } from './nc-components/nccomponent-4/login.component';
     
     ],
 
-    exports: [ NcComponente6,
+    exports: [ PjNcComponent6,
     ],
     providers: [{ provide: MAT_DATE_LOCALE, useValue: 'it-IT' }],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

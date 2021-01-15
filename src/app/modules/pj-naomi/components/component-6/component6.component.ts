@@ -2,11 +2,11 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'nccomponente-6-padre',
-    templateUrl: './nccomponente-6.component.html',
-    styleUrls: ['./nccomponente-6.component.scss']
+    selector: 'component-6',
+    templateUrl: './component6.component.html',
+    styleUrls: ['./component6.component.scss']
 })
-export class NcComponente6 implements OnInit {
+export class PjNcComponent6 implements OnInit {
    
     constructor() { }
 
