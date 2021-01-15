@@ -17,7 +17,7 @@ import { RsComponent2 } from './components/rscomponent2/rscomponent2.component';
 import { RsComponent1 } from './components/rscomponent1/rscomponent1.component';
 import { RsComponentePadre } from './components/rscomponent6/rscomponent6.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from '../app-routing.module';
+import { AppRoutingModule } from '../../app-routing.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
