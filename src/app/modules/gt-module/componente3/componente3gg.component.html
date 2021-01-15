@@ -1,0 +1,18 @@
+<h1 id="title">Login</h1><br>
+<div id="wrapper">
+    <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
+       <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput placeholder="Ex. pat@example.com">
+            <mat-error>Inserire l'email!</mat-error>
+        </mat-form-field> <br>
+
+        <mat-form-field appearance="outline" fxFlex>
+            <mat-label>Password</mat-label>
+            <input formControlName="password" matInput >
+            <mat-error>Inserire la password!</mat-error>
+        </mat-form-field> <br>
+        <button onclick="login()">Login</button>
+
+    </form>
+</div>
