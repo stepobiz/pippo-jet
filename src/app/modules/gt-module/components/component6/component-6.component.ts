@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'componente6gg',
-    templateUrl: './componente6gg.component.html',
-    styleUrls: ['./componente6gg.component.scss']
+    selector: 'GtComponent6',
+    templateUrl: './component-6.component.html',
+    styleUrls: ['./component-6.component.scss']
 })
-export class componente6ggComponent implements OnInit {
+export class PjGtComponent6Component implements OnInit {
     constructor() { }
 
     ngOnInit(): void { }

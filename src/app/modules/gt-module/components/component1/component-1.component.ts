@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-    selector: 'componente1gg',
-    templateUrl: './componente1gg.component.html',
-    styleUrls: ['./componente1gg.component.scss']
+    selector: 'component1',
+    templateUrl: './component-1.component.html',
+    styleUrls: ['./component-1.component.scss']
 })
-export class  componente1ggComponent implements OnInit {
+export class  PjGtComponent1Component implements OnInit {
     registrationFormGroup: FormGroup;
     constructor(
         private _formBuilder: FormBuilder,
