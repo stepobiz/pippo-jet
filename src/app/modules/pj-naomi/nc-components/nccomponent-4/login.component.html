@@ -1,0 +1,39 @@
+<h1>Componente4</h1>
+
+        <h2>NC LOGIN</h2>
+    
+   <form [formGroup]="ncloginFormGroup" (ngSubmit)="submit()">
+
+    <mat-label>Email</mat-label>
+    <input type="email" formControlName="email" matImput required>
+        <mat-error>Inserire email per accedere</mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+        </mat-error>
+<br> 
+
+    
+        <mat-label>Password</mat-label>
+        <input name="password" formControlName="password" matImput required>
+            <mat-error>Inserire password per accedere</mat-error>
+   
+<br> 
+
+<div id="forgot">
+    <span>Password dimenticata?</span> 
+    <button type="submit">Clicca qui</button>
+</div>
+<br>
+<div id="remember">
+    <label for="rememberpsw">Ricordami</label>
+    <input id="rememberpsw" type="checkbox" value="yes"> <br/>
+</div>
+<br>
+    <button type="submit" matt-rasined-button color="accent">Login</button>
+
+</form>
+
+
+
+
+        
