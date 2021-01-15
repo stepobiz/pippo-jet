@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './search-flight.component.html',
     styleUrls: ['./search-flight.component.scss']
 })
-export class pjSearchFlightComponent implements OnInit {
+export class PjSearchFlightComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void { }
