@@ -2,10 +2,10 @@ import { Component, OnInit, SchemaMetadata } from '@angular/core';
 
 @Component({
     selector: 'rscomponentepadre',
-    templateUrl: 'rscomponent6.component.html',
-    styleUrls: ['rscomponent6.component.scss']
+    templateUrl: 'component6.component.html',
+    styleUrls: ['component6.component.scss']
 })
-export class RsComponentePadre implements OnInit {
+export class PjRsComponentePadre implements OnInit {
     constructor() { }
 
     ngOnInit(): void {

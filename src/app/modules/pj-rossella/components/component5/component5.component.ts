@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-    selector: 'rscomponent5',
-    templateUrl: 'rscomponent5.component.html',
-    styleUrls: ['rscomponent5.component.scss']
+    selector: 'component5',
+    templateUrl: 'component5.component.html',
+    styleUrls: ['component5.component.scss']
 })
-export class RsComponent5 implements OnInit {
+export class PjRsComponent5 implements OnInit {
     constructor() { }
     email = new FormControl('', [Validators.required, Validators.email]);
 

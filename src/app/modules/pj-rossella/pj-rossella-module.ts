@@ -10,27 +10,35 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { RsComponent4 } from './components/rscomponent4/rscomponent4.component';
-import { RsComponent5 } from './components/rscomponent5/rscomponent5.component';
-import { RsComponent3 } from './components/rscomponent3/rscomponent3.component';
-import { RsComponent2 } from './components/rscomponent2/rscomponent2.component';
-import { RsComponent1 } from './components/rscomponent1/rscomponent1.component';
-import { RsComponentePadre } from './components/rscomponent6/rscomponent6.component';
+import { PjRsComponent4 } from './components/component4/component4.component';
+import { PjRsComponent5 } from './components/component5/component5.component';
+import { PjRsComponent3 } from './components/component3/component3.component';
+import { PjRsComponent2 } from './components/component2/component2.component';
+import { PjRsComponent1 } from './components/component1/component1.component';
+import { PjRsComponentePadre } from './components/component6/component6.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { PjRsComponent7 } from './components/component7/component7.componente';
+import { PjRsComponent8 } from './components/component8/component8.component';
+import { PjRsComponent10 } from './components/component10/component10.component';
+import { PjRsComponent9 } from './components/component9/component9.component';
 
 
 @NgModule({
     declarations: [
-        RsComponent1,
-        RsComponent2,
-        RsComponent3,
-        RsComponent4,
-        RsComponent5,
-        RsComponentePadre,
+        PjRsComponent1,
+        PjRsComponent2,
+        PjRsComponent3,
+        PjRsComponent4,
+        PjRsComponent5,
+        PjRsComponentePadre,
+        PjRsComponent7,
+        PjRsComponent8,
+        PjRsComponent9,
+        PjRsComponent10,
     ],
     imports: [ 
         BrowserModule,
@@ -52,7 +60,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 
     ],
     exports: [
-        RsComponentePadre,
+        PjRsComponentePadre,
 
     ],
     providers: [{ provide: MAT_DATE_LOCALE, useValue: 'it-IT'}],
@@ -61,4 +69,4 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
       ]
   
 })
-export class pjRossellaModule {}
+export class PjRossellaModule {}
