@@ -34,7 +34,7 @@ import { PjTopMenuComponent } from './components/topmenu/topmenu.component';
 import { PgFooterComponent } from './components/pgfooter/pgfooter.component';
 import { PjLoginComponent } from './components/login/login.component';
 import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
-import { gtModule } from './modules/gt-module.module';
+import { gtModule } from './modules/gt-module/gt-module.module';
 import { pjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
 
 
