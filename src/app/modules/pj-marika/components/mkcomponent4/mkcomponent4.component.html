@@ -1,0 +1,10 @@
+<div>
+    <mat-form-field id="nation" appearance="fill">
+        <mat-label>Nazionalità</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let nation of nations" [value]="nation.value">
+                {{nation.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

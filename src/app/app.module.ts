@@ -36,6 +36,7 @@ import { PjAlbertoModule } from './modules/pj-alberto/pj-alberto.module';
 import { pjNaomiModule } from './modules/pj-naomi/pj-naomi-module';
 import { PjGiacomoModule } from './modules/gt-module/pj-giacomo.module';
 import { PjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
+import { PjMarikaModule } from './modules/pj-marika/components/pj-marika.module';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { PjRossellaModule } from './modules/pj-rossella/pj-rossella-module';
     PjGiacomoModule,
     PjRossellaModule,
     pjNaomiModule,
+    PjMarikaModule,
     
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'it-IT' }],

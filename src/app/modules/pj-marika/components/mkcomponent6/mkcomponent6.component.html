@@ -1,0 +1,19 @@
+<mat-card id="wrapper" class="content" role="main">
+
+  <button mat-raised-button class=button id="btn1" (click)="showcomponent(1)" color="warn">Componente 1</button>
+
+  <button mat-raised-button class=button id="btn2" (click)="showcomponent(2)" color="warn">Componente 2</button>
+
+  <button mat-raised-button class=button id="btn3" (click)="showcomponent(3)" color="warn">Componente 3</button>
+
+  <button mat-raised-button class=button id="btn4" (click)="showcomponent(4)" color="warn">Componente 4</button>
+
+  <button mat-raised-button class=button id="btn5" (click)="showcomponent(5)" color="warn">Componente 5</button>
+
+</mat-card>
+
+<pj-mkcomponent1 *ngIf="showcomponent1"></pj-mkcomponent1>
+<pj-mkcomponent2 *ngIf="showcomponent2"></pj-mkcomponent2>
+<pj-mkcomponent3 *ngIf="showcomponent3"></pj-mkcomponent3>
+<pj-mkcomponent4 *ngIf="showcomponent4"></pj-mkcomponent4>
+<pj-mkcomponent5 *ngIf="showcomponent5"></pj-mkcomponent5>
