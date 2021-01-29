@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'component4',
+    selector: 'component-4',
     templateUrl: './component-4.component.html',
     styleUrls: ['./component-4.component.scss']
 })
 export class PjMkcomponent4Component implements OnInit {
+    
+    @Input()
+    titolo: string | undefined;
+    
     constructor() { } 
 
     nations = [

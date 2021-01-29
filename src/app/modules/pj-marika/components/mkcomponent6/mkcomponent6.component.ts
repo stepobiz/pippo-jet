@@ -1,11 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'component6',
-    templateUrl: './component-6.component.html',
-    styleUrls: ['./component-6.component.scss']
+    selector: 'mkcomponent6',
+    templateUrl: './mkcomponent6.component.html',
+    styleUrls: ['./mkcomponent6.component.scss']
 })
 export class PjMkcomponent6Component implements OnInit {
+    
+    showtext1 :string = "i maiali sono rosa";
+    showtext2 :string = "il sole è giallo";
+    showtext3 :string = "il cielo è azzurro";
+    showtext4 :string = "i sassi sono grigi";
+    showtext5 :string = "l'erba è verde";
+
     constructor() { }
 
     ngOnInit(): void { }
